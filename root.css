@@ -1,0 +1,16 @@
+:root {
+    --gradient-1: radial-gradient(78.49% 70.71% at 50% 50%, rgba(167, 213, 234, 0.30) 0%, rgba(167, 213, 234, 0.00) 100%), radial-gradient(156.97% 141.42% at 100% 100%, rgba(255, 158, 159, 0.30) 0%, rgba(255, 158, 159, 0.00) 100%), radial-gradient(156.97% 141.42% at 0% 0%, rgba(191, 59, 83, 0.70) 0%, rgba(191, 59, 83, 0.00) 100%);
+    --gradient-2: radial-gradient(314.08% 141.42% at 100% 0%, #FF9E9F 0%, rgba(255, 158, 159, 0.00) 100%), #A7D5EA;
+}
+
+.gradient-blur {
+    filter: blur(50px);
+}
+
+.primary-light {
+    background: radial-gradient(circle, #3363ED, transparent);
+}
+
+.accent-3-light {
+    background: radial-gradient(circle, #A7D5EA, transparent);
+}
