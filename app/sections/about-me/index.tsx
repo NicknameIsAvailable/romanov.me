@@ -1,25 +1,20 @@
-import Button from '@/widgets/button/ui';
 import React from 'react';
-import GitHub from "@/public/icons/github.svg"
-import Telegram from "@/public/icons/telegram.svg"
-import GradientBlob from "@/public/images/gradient-blob-1.svg"
+import GradientBlob2 from "@/public/images/gradient-blob-2.svg"
+import Blob2 from "@/public/images/blob-2.svg"
 import Image from 'next/image';
+import { DictAboutMe } from '@/app/[lang]/model';
 
-const AboutMe = () => {
+const AboutMe = ({dict}: {dict: DictAboutMe}) => {
     return (
-        <section className='container mx-auto min-h-screen flex items-center'>
-            <div className="relative z-[1]">
-                <Image src={GradientBlob} alt="Gradient blob" className="absolute -top-12 -z-[1]"/>
-                <h2 className='text-accent-3 text-5xl font-bold'>ROMANOV</h2>
-                <h1 className='text-accent-1 text-9xl font-bold'>FRONTEND <br/> DEVELOPER</h1>
-                <div className="flex gap-12 mt-6">
-                    <Button className="w-60">WHO????</Button>
-                    <Button className="w-60" variant='secondary'>GET IN TOUCH</Button>
-                </div>
-                <div className="flex gap-6 mt-6">
-                    <Button className="rounded-full w-12 h-12 p-2"><Image src={GitHub} alt='GitHub'/></Button>
-                    <Button className="rounded-full w-12 h-12 p-2"><Image src={Telegram} alt='GitHub'/></Button>
-                </div>
+        <section className="container mx-auto min-h-screen flex gap-12">
+            <div className="flex-3 w-3/5 relative z-0">
+                <Image src={GradientBlob2} alt="Gradient Blob" className="absolute z-[-1] -top-16"/>
+                <h1 className="text-accent-3 font-bold text-5xl">{dict.title}</h1>
+                <p className="text-white mt-8 text-2xl font-bold" dangerouslySetInnerHTML={{ __html: dict.text }}/>
+                <div className="h-[2px] mt-6 w-full bg-accent-3 mx-6"/>
+            </div>
+            <div className="w-2/5 relative h-[700px]">
+                <Image src={Blob2} alt="Blob 2" className="absolute bottom-0"/>
             </div>
         </section>
     );

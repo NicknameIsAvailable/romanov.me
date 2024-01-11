@@ -1,0 +1,116 @@
+{
+    "links": {
+      "hello": "Hello",
+      "aboutMe": "About me",
+      "skills": "Skills",
+      "portfolio": "Portfolio",
+      "getInTouch": "Get in touch"
+    },
+    "hello": {
+      "name": "ROMANOV",
+      "job": "FRONTEND \n DEVELOPER",
+      "aboutMeButton": "WHO????",
+      "getInTouchButton": "GET IN TOUCH"
+    },
+    "aboutMe": {
+      "title": "ABOUT ME",
+      "text": "My&nbsp;name is <span class=\"text-accent-3\"> Yaroslav Romanov</span>. I&nbsp;am a <span class=\"text-accent-1\"> Frontend Developer</span> with 2&nbsp;years of&nbsp;hands-on experience crafting <span class=\"text-accent-1\"> immersive digital experiences</span>. Proficient in&nbsp;transforming ideas into pixel-perfect, user-friendly interfaces, I&nbsp;thrive on&nbsp;the dynamic interplay of design and code. A&nbsp;relentless learner in&nbsp;the ever-evolving tech landscape, I&nbsp;bring creativity and precision to&nbsp;every project, ensuring seamless user interactions and visually stunning web solutions. Let&rsquo;s <span class=\"text-accent-1\">code </span> the future together!"
+    },
+    "skills": {
+      "title": "Skills",
+      "skillDivs": [
+        {
+          "name": "Programming Languages",
+          "skills": [
+            {
+              "name": "JS",
+              "description": "JavaScript is a versatile and dynamic programming language primarily used for building interactive and dynamic web pages..."
+            },
+            {
+              "name": "TS",
+              "description": "TypeScript is a superset of JavaScript that adds static typing to the language. Developed by Microsoft, it allows developers to define explicit data types..."
+            },
+            {
+              "name": "Python",
+              "description": "Python is a high-level, interpreted programming language known for its readability and versatility..."
+            },
+            {
+              "name": "Go",
+              "description": "Go, also known as Golang, is a statically typed and compiled programming language developed by Google..."
+            }
+          ]
+        },
+        {
+          "name": "Frontend",
+          "skills": [
+            {
+              "name": "Next.js",
+              "description": "Next.js is a popular open-source React framework for building web applications..."
+            },
+            {
+              "name": "React.js",
+              "description": "React.js, commonly known as React, is a declarative and efficient JavaScript library for building user interfaces..."
+            },
+            {
+              "name": "Redux",
+              "description": "Redux is a predictable state container for JavaScript applications, commonly used with React.js..."
+            }
+          ]
+        },
+        {
+          "name": "Backend",
+          "skills": [
+            {
+              "name": "Express",
+              "description": "Express.js, commonly referred to as Express, is a minimal and flexible Node.js web application framework..."
+            },
+            {
+              "name": "FastAPI",
+              "description": "FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+..."
+            }
+          ]
+        },
+        {
+          "name": "Databases",
+          "skills": [
+            {
+              "name": "PostgreSQL",
+              "description": "PostgreSQL, often referred to as Postgres, is a powerful, open-source relational database management system (RDBMS)..."
+            },
+            {
+              "name": "MongoDB",
+              "description": "MongoDB is a popular, open-source NoSQL database management system that stores data in a flexible, JSON-like format..."
+            },
+            {
+              "name": "MySQL",
+              "description": "MySQL is an open-source relational database management system (RDBMS) that is widely used for building scalable and robust databases..."
+            },
+            {
+              "name": "Supabase",
+              "description": "Supabase is an open-source platform with real-time PostgreSQL database as a service, authentication, file storage, RESTful API, and serverless functions..."
+            }
+          ]
+        }
+      ]
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "viewButton": "View",
+      "from": "From: ",
+      "to": "To: "
+    },
+    "getInTouch": {
+      "title": "Get in touch",
+      "label1": {
+        "name": "Your telegram (url)",
+        "placeholder": "https://t.me/NicknameIsAvailable"
+      },
+      "label2": {
+        "name": "What do you want",
+        "placeholder": "Best landing in web"
+      },
+      "sendButton": "Send",
+      "writeDirectly": "...or write to me directly"
+    }
+  }
+  

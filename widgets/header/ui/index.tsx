@@ -28,19 +28,8 @@ const Header = () => {
     ]
 
     return (
-        <header className="fixed bottom-0 w-screen h-20 border-t-accent-2 border-t-2">
-            <div className="container mx-auto h-full flex w-full border-x-2 border-x-accent-2">
-            <nav className="flex justify-around h-full w-full items-center font-bold">
-                {links.map((link, key) => 
-                    <p className="text-xl text-accent-2">
-                        <Link href={link.url} key={key}>
-                            {link.name}
-                        </Link>
-                    </p>
-                )}
-                </nav>
-                <BurgerMenu/>
-            </div>
+        <header className="fixed bottom-0 z-10 w-20 h-20 border-accent-2 border-2">
+            <BurgerMenu/>
         </header>
     );
 };
