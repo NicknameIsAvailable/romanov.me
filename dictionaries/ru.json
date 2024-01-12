@@ -8,7 +8,7 @@
     },
     "hello": {
       "name": "РОМАНОВ",
-      "job": "ФРОНТЕНД \n РАЗРАБОТЧИК",
+      "job": "ФРОНТЕНД <br> РАЗРАБОТЧИК",
       "aboutMeButton": "КТО????",
       "getInTouchButton": "СВЯЗАТЬСЯ"
     },
@@ -95,7 +95,8 @@
     },
     "portfolio": {
       "title": "Портфолио",
-      "viewButton": "Просмотр",
+      "viewButton": "Посмотреть",
+      "viewMoreButton": "Посмотреть больше",
       "from": "От: ",
       "to": "До: "
     },

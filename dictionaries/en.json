@@ -8,7 +8,7 @@
     },
     "hello": {
       "name": "ROMANOV",
-      "job": "FRONTEND \n DEVELOPER",
+      "job": "FRONTEND <br> DEVELOPER",
       "aboutMeButton": "WHO????",
       "getInTouchButton": "GET IN TOUCH"
     },
@@ -96,6 +96,7 @@
     "portfolio": {
       "title": "Portfolio",
       "viewButton": "View",
+      "viewMoreButton": "View more",
       "from": "From: ",
       "to": "To: "
     },

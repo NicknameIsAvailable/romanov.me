@@ -36,6 +36,7 @@ export interface DictSkills {
 export interface DictPortfolio {
     title: string;
     viewButton: string;
+    viewMoreButton: string;
     from: string
     to: string;
 }

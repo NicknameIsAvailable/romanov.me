@@ -15,6 +15,7 @@ import MySQLIcon from "@/public/images/mysql.svg"
 import SupabaseIcon from "@/public/images/supabase.svg"
 import Light from "@/public/icons/light.svg"
 import Image from 'next/image';
+import GradientBlob3 from "@/public/images/gradient-blob-3.svg"
 
 
 const Skills = ({dict}: Props) => {
@@ -107,16 +108,18 @@ const Skills = ({dict}: Props) => {
     ] 
 
     return (
-        <section className="container mx-auto min-h-screen">
+        <section className="container p-4 mx-auto min-h-screen">
+            <div id="skills"/>
             <h1 className="text-accent-3 font-bold text-5xl">{dict.title}</h1>
-            <div className="flex flex-col gap-6 mt-3">
+            <div className="flex flex-col flex-wrap gap-6 mt-3 relative z-0">
+                <Image src={GradientBlob3} alt="Gradient blob" className="absolute right-0 top-1/4 z-[-1]"/>
                 {
                     skills.map((skillDiv: SkillsDiv, key: number) => 
                         <div className="mt-6" key={key}>
                             <h2 className="text-accent-2 text-3xl font-bold">{skillDiv.name}</h2>
-                            <div className="flex gap-12 mt-6 relative">
+                            <div className="flex gap-12 mt-6 justify-between sm:justify-start relative flex-wrap">
                                 {skillDiv.skills.map((skill: Skill, key: number) => 
-                                    <div key={key} className="py-6 pl-6 relative z-0 cursor-pointer w-64 rounded-2xl border-2 border-accent-3 flex items-center gap-2">
+                                    <div key={key} className="py-6 pl-6 relative z-0 cursor-pointer w-[45%] sm:w-64 rounded-2xl border-2 border-accent-3 flex items-center gap-2">
                                         <Image src={Light} alt="Light" className="absolute left-0 h-full w-full rounded-2xl z-[-1]"/>
                                         <Image src={skill.icon} alt={skill.name}/>
                                         <h3 className="w-full text-accent-3 text-center text-xl font-bold">{skill.name}</h3>

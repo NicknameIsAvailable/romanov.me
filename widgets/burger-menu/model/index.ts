@@ -9,5 +9,5 @@ export interface Links {
 export interface Param {
     name: string,
     icon: ReactNode,
-    function: () => void
+    function: any
 }

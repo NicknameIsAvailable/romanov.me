@@ -1,0 +1,156 @@
+{
+    "data": [
+      {
+        "title": {
+          "ru-RU": "Событие 1 на русском",
+          "en-US": "Event 1 in English"
+        },
+        "description": {
+          "ru-RU": "Описание события 1 на русском",
+          "en-US": "Description of Event 1 in English"
+        },
+        "from": "2024-01-12T12:00:00Z",
+        "to": "2024-01-13T12:00:00Z",
+        "tags": ["tag1", "tag2"],
+        "url": "https://example.com",
+        "github": "https://github.com/example",
+        "image": "https://images.unsplash.com/photo-1634084462412-b54873c0a56d?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "title": {
+          "ru-RU": "Событие 2 на русском",
+          "en-US": "Event 2 in English"
+        },
+        "description": {
+          "ru-RU": "Описание события 2 на русском",
+          "en-US": "Description of Event 2 in English"
+        },
+        "from": "2024-01-14T12:00:00Z",
+        "to": "2024-01-15T12:00:00Z",
+        "tags": ["tag3", "tag4"],
+        "url": "https://example2.com",
+        "image": "https://images.unsplash.com/photo-1532354058425-ba7ccc7e4a24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VicGFnZXxlbnwwfHwwfHx8MA%3D%3D"
+      },
+      {
+        "title": {
+          "ru-RU": "Событие 3 на русском",
+          "en-US": "Event 3 in English"
+        },
+        "description": {
+          "ru-RU": "Описание события 3 на русском",
+          "en-US": "Description of Event 3 in English"
+        },
+        "from": "2024-01-16T12:00:00Z",
+        "to": "2024-01-17T12:00:00Z",
+        "tags": ["tag5", "tag6"],
+        "url": "https://example3.com",
+        "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2VicGFnZXxlbnwwfHwwfHx8MA%3D%3D"
+      },
+      {
+        "title": {
+          "ru-RU": "Событие 4 на русском",
+          "en-US": "Event 4 in English"
+        },
+        "description": {
+          "ru-RU": "Описание события 4 на русском",
+          "en-US": "Description of Event 4 in English"
+        },
+        "from": "2024-01-18T12:00:00Z",
+        "to": "2024-01-19T12:00:00Z",
+        "tags": ["tag7", "tag8"],
+        "url": "https://example4.com",
+        "image": "https://images.unsplash.com/photo-1642132652860-471b4228023e?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "title": {
+          "ru-RU": "Событие 5 на русском",
+          "en-US": "Event 5 in English"
+        },
+        "description": {
+          "ru-RU": "Описание события 5 на русском",
+          "en-US": "Description of Event 5 in English"
+        },
+        "from": "2024-01-20T12:00:00Z",
+        "to": "2024-01-21T12:00:00Z",
+        "tags": ["tag9", "tag10"],
+        "url": "https://example5.com",
+        "image": "https://images.unsplash.com/photo-1632813405743-ab79b1d3d98b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D"
+      },
+      {
+        "title": {
+          "ru-RU": "Событие 6 на русском",
+          "en-US": "Event 6 in English"
+        },
+        "description": {
+          "ru-RU": "Описание события 6 на русском",
+          "en-US": "Description of Event 6 in English"
+        },
+        "from": "2024-01-22T12:00:00Z",
+        "to": "2024-01-23T12:00:00Z",
+        "tags": ["tag11", "tag12"],
+        "url": "https://example6.com",
+        "image": "https://images.unsplash.com/photo-1532653495815-10005f43eee9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D"
+      },
+      {
+        "title": {
+          "ru-RU": "Событие 7 на русском",
+          "en-US": "Event 7 in English"
+        },
+        "description": {
+          "ru-RU": "Описание события 7 на русском",
+          "en-US": "Description of Event 7 in English"
+        },
+        "from": "2024-01-24T12:00:00Z",
+        "to": "2024-01-25T12:00:00Z",
+        "tags": ["tag13", "tag14"],
+        "url": "https://example7.com",
+        "image": "https://images.unsplash.com/photo-1560472354-0088b5dc9d8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D"
+      },
+      {
+        "title": {
+          "ru-RU": "Событие 8 на русском",
+          "en-US": "Event 8 in English"
+        },
+        "description": {
+          "ru-RU": "Описание события 8 на русском",
+          "en-US": "Description of Event 8 in English"
+        },
+        "from": "2024-01-26T12:00:00Z",
+        "to": "2024-01-27T12:00:00Z",
+        "tags": ["tag15", "tag16"],
+        "url": "https://example8.com",
+        "image": "https://images.unsplash.com/photo-1625296276188-1d149bdaf560?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D"
+      },
+      {
+        "title": {
+          "ru-RU": "Событие 9 на русском",
+          "en-US": "Event 9 in English"
+        },
+        "description": {
+          "ru-RU": "Описание события 9 на русском",
+          "en-US": "Description of Event 9 in English"
+        },
+        "from": "2024-01-28T12:00:00Z",
+        "to": "2024-01-29T12:00:00Z",
+        "tags": ["tag17", "tag18"],
+        "url": "https://example9.com",
+        "image": "https://images.unsplash.com/photo-1625535163131-9d1fc30ea5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D"
+      },
+      {
+        "title": {
+          "ru-RU": "Событие 10 на русском",
+          "en-US": "Event 10 in English"
+        },
+        "description": {
+          "ru-RU": "Описание события 10 на русском",
+          "en-US": "Description of Event 10 in English"
+        },
+        "from": "2024-01-30T12:00:00Z",
+        "to": "2024-01-31T12:00:00Z",
+        "tags": ["tag19", "tag20"],
+        "url": "https://example10.com",
+        "image": "https://images.unsplash.com/photo-1642132652809-8c6ab1971169?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"
+      }
+    ]
+  }
+  

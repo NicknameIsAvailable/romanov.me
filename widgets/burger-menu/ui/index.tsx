@@ -10,14 +10,16 @@ import BedtimeIcon from '@mui/icons-material/Bedtime';
 import Link from 'next/link';
 import { Links, Param } from '../model';
 import { OutsideClickHandler } from '@/features/outside-click-handler';
+import { useParams } from 'next/navigation';
+import { DictLinks } from '@/app/[lang]/model';
+import { CancelOutlined, Close } from '@mui/icons-material';
 
 const styles = {
-    nav: "top-0 z-10 fixed h-full w-96 bg-light/30 duration-300 backdrop-blur-md border-l-2 border-l-accent-2 flex flex-col",
-    closed: "-right-96",
-    open: "right-0",
+    closed: "-right-[1000px]",
+    open: "right-0 sm:border-x-2",
     navContent: "w-full h-full flex-1 flex flex-col justify-around items-center",
     burgerButton: "h-full w-20 flex justify-center items-center duration-150 hover:bg-accent-2/30",
-    buttonGroup: "w-full h-20 flex justify-around items-center border-t-2 border-t-accent-2",
+    buttonGroup: "w-full z-2 h-20 flex justify-around items-center border-t-2 border-t-accent-2",
     icon: "text-accent-2 h-10 w-10",
     link: "text-accent-2 text-4xl w-80 duration-150 hover:bg-accent-2/30 p-2 rounded-2xl",
 }
@@ -40,63 +42,86 @@ const links: Links[] = [
     },
 ]
 
-const params: Param[] = [
-    {
-        name: "Theme",
-        icon: <BedtimeIcon className={styles.icon}/>,
-        function: () => {}
-    },
-    {
-        name: "Language",
-        icon: <LanguageIcon className={styles.icon}/>,
-        function: () => {}
-    },
-]
 
-const urls = [
-    {
-        name: "Hello",
-        url: "#hello"
-    },
-    {
-        name: "About me",
-        url: "#about-me"
-    },
-    {
-        name: "Skills",
-        url: "#skills"
-    },
-    {
-        name: "Portfolio",
-        url: "#portfolio"
-    },
-    {
-        name: "Get in touch",
-        url: "#get-in-touch"
-    },
-]
+const BurgerMenu = ({dict}: {dict: DictLinks}) => {
+    const params = useParams()
 
-const BurgerMenu = () => {
+    const urls = [
+        {
+            name: dict.hello,
+            url: "#hello"
+        },
+        {
+            name: dict.aboutMe,
+            url: "#about-me"
+        },
+        {
+            name: dict.skills,
+            url: "#skills"
+        },
+        {
+            name: dict.portfolio,
+            url: "#portfolio"
+        },
+        {
+            name: dict.getInTouch,
+            url: "#get-in-touch"
+        },
+    ]
+
     const [open, setOpen] = useState<boolean>()
+    const [langsVisible, setLangsVisible] = useState<boolean>(false)
 
     const handleOpen = () => {
         if (!open)
             setOpen(true)
     }
 
+    const handleLangClick = () => {
+        setLangsVisible(!langsVisible)
+    }
+
     const onOutsideClick = () => {
         setOpen(false)
     }
 
+    const langs = [
+        {
+            name: "Русский",
+            value: "ru-RU",
+        },
+        {
+            name: "English",
+            value: "en-US",
+        },
+    ]
+
+
+    const settings: Param[] = [
+        {
+            name: "Theme",
+            icon: <BedtimeIcon className={styles.icon}/>,
+            function: () => {}
+        },
+        {
+            name: "Language",
+            icon: langsVisible ? <CancelOutlined className={styles.icon}/> : <LanguageIcon className={styles.icon}/>,
+            function: handleLangClick
+        },
+    ]
+
     return (
         <>
             <OutsideClickHandler onOutsideClick={onOutsideClick}>
-                <nav className={`${styles.nav} ${open ? styles.open : styles.closed}`}>
+                <nav className={`top-0 z-10 fixed h-full sm:w-96 w-screen bg-light/30 duration-300 backdrop-blur-md border-l-2 border-l-accent-2 flex flex-col ${open ? styles.open : styles.closed}`}>
+                    <button onClick={onOutsideClick} className="absolute top-6 right-6 duration-150 active:scale-95">
+                        <CancelOutlined className="w-10 h-10 text-accent-2"/>
+                    </button>
                     <div className={styles.navContent}>
                         {urls.map((link, key) => 
                             <Link href={link.url} key={key}>
                                 <button className={styles.link}>
-                                        {link.name}
+                                    {link.name}
                                 </button>
                             </Link>
                         )}
@@ -108,9 +133,22 @@ const BurgerMenu = () => {
                             </Link>
                         )}
                     </div>
+                    <div 
+                        className={`border-t-2 z-1 border-t-accent-2 flex flex-col gap-3 w-full justify-center items-center p-6 duration-300 delay-150 ${langsVisible ? "h-1/4" : "h-0 opacity-0 pointer-events-none p-0 hidden" }`}
+                        >
+                        {
+                            langs.map(lang => 
+                                <Link href={`/${lang.value}`}>
+                                    <button className={`text-accent-2 text-4xl w-80 duration-150 hover:bg-accent-2/30 p-2 rounded-2xl ${params.lang === lang.value ? "bg-accent-1 text-white" : ""} ${langsVisible ? "" : "opacity-0 z-[-1] p-0"}`}>
+                                        {lang.name}
+                                    </button>
+                                </Link>
+                            )
+                        }
+                    </div>
                     <div className={styles.buttonGroup}>
-                        {params.map((param: Param, key: number) => 
-                            <button key={key}>
+                        {settings.map((param: Param, key: number) => 
+                            <button key={key} onClick={param.function}>
                                 {param.icon}
                             </button>
                         )}
