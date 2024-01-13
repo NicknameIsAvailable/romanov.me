@@ -53,6 +53,10 @@ export interface DictGetInTouch {
         name: string;
         placeholder: string;
     };
+    label3: {
+        name: string;
+        placeholder: string;
+    };
 }
 
 export interface Dict {

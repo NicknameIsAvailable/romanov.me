@@ -2,154 +2,65 @@
     "data": [
       {
         "title": {
-          "ru-RU": "Событие 1 на русском",
-          "en-US": "Event 1 in English"
+          "ru-RU": "Allworks",
+          "en-US": "Allworks"
         },
         "description": {
-          "ru-RU": "Описание события 1 на русском",
-          "en-US": "Description of Event 1 in English"
+          "ru-RU": "Сайт стартапа Allworks, в котором я занимаю роль Frontend-разработчика. В данный момент в разработке. Сайт представляет собой аналог HH.ru.",
+          "en-US": "Website of a startup called Allworks, where I hold the role of Frontend developer. Currently under development. The site is an analog of HH.ru"
         },
-        "from": "2024-01-12T12:00:00Z",
+        "from": "2023-12-20T12:00:00Z",
         "to": "2024-01-13T12:00:00Z",
-        "tags": ["tag1", "tag2"],
-        "url": "https://example.com",
-        "github": "https://github.com/example",
-        "image": "https://images.unsplash.com/photo-1634084462412-b54873c0a56d?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "tags": ["Next.js", "React.js", "TypeScript", "SSR", "FSR", "SCSS"],
+        "url": "https://allworks.vercel.app/",
+        "image": "https://gv9nkbrfzsueg0x5.public.blob.vercel-storage.com/Screenshot%202024-01-13%20at%2017-25-22%20Allworks-ojTsvJVUOCEK9VTFha2ZVNbYlxha30.png"
       },
       {
         "title": {
-          "ru-RU": "Событие 2 на русском",
-          "en-US": "Event 2 in English"
+          "ru-RU": "Immigration Service",
+          "en-US": "Immigration Service"
         },
         "description": {
-          "ru-RU": "Описание события 2 на русском",
-          "en-US": "Description of Event 2 in English"
+          "ru-RU": "Лендинг с формой обратной связи для компании, помогающей своим клиентам оформить ВНЖ в Испании. Коммерческий проект, выполненный на фрилансе.",
+          "en-US": "Landing with a feedback form for a company that helps its clients to apply for a residence permit in Spain. Commercial project made on a freelance basis."
         },
-        "from": "2024-01-14T12:00:00Z",
-        "to": "2024-01-15T12:00:00Z",
-        "tags": ["tag3", "tag4"],
-        "url": "https://example2.com",
-        "image": "https://images.unsplash.com/photo-1532354058425-ba7ccc7e4a24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VicGFnZXxlbnwwfHwwfHx8MA%3D%3D"
+        "from": "2023-08-25T12:00:00Z",
+        "to": "2023-09-03T12:00:00Z",
+        "tags": ["Next.js", "TypeScript", "SSR", "SCSS", "Nodemailer", "Express.js"],
+        "url": "https://immigration-service.es/",
+        "github": "https://github.com/NicknameIsAvailable/immigration-service",
+        "image": "https://gv9nkbrfzsueg0x5.public.blob.vercel-storage.com/Screenshot%202024-01-13%20at%2017-36-23%20Immigration%20Service-i5iC0EY7CJviqQy5Y4jQSmG5CqITlX.png"
       },
       {
         "title": {
-          "ru-RU": "Событие 3 на русском",
-          "en-US": "Event 3 in English"
+          "ru-RU": "Datum",
+          "en-US": "Datum"
         },
         "description": {
-          "ru-RU": "Описание события 3 на русском",
-          "en-US": "Description of Event 3 in English"
+          "ru-RU": "Лендинг с формой обратной связи. Коммерческий проект выполненный на фрилансе.",
+          "en-US": "Landing with feedback form. Commercial project done on freelance."
         },
-        "from": "2024-01-16T12:00:00Z",
-        "to": "2024-01-17T12:00:00Z",
-        "tags": ["tag5", "tag6"],
-        "url": "https://example3.com",
-        "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2VicGFnZXxlbnwwfHwwfHx8MA%3D%3D"
+        "from": "2023-10-16T12:00:00Z",
+        "to": "2023-10-21T12:00:00Z",
+        "tags": ["React.js", "Vite", "Express.js", "Cloudscape Design System", "Nodemailer"],
+        "url": "https://datum-vite.vercel.app/",
+        "image": "https://gv9nkbrfzsueg0x5.public.blob.vercel-storage.com/Screenshot%202024-01-13%20at%2017-45-13%20Datum-qnZdnFqApgPaPS2dVobFeYobydMe3K.png"
       },
       {
         "title": {
-          "ru-RU": "Событие 4 на русском",
-          "en-US": "Event 4 in English"
+          "ru-RU": "Тестовое задание Picasso",
+          "en-US": "Picasso test task"
         },
         "description": {
-          "ru-RU": "Описание события 4 на русском",
-          "en-US": "Description of Event 4 in English"
+          "ru-RU": "Тестовое задание, предложенное компанией Picasso. Описание задачи описано в репозитории проекта на Github",
+          "en-US": "A test task proposed by Picasso. The task description is described in the project repository on Github"
         },
-        "from": "2024-01-18T12:00:00Z",
-        "to": "2024-01-19T12:00:00Z",
-        "tags": ["tag7", "tag8"],
-        "url": "https://example4.com",
-        "image": "https://images.unsplash.com/photo-1642132652860-471b4228023e?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      },
-      {
-        "title": {
-          "ru-RU": "Событие 5 на русском",
-          "en-US": "Event 5 in English"
-        },
-        "description": {
-          "ru-RU": "Описание события 5 на русском",
-          "en-US": "Description of Event 5 in English"
-        },
-        "from": "2024-01-20T12:00:00Z",
-        "to": "2024-01-21T12:00:00Z",
-        "tags": ["tag9", "tag10"],
-        "url": "https://example5.com",
-        "image": "https://images.unsplash.com/photo-1632813405743-ab79b1d3d98b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D"
-      },
-      {
-        "title": {
-          "ru-RU": "Событие 6 на русском",
-          "en-US": "Event 6 in English"
-        },
-        "description": {
-          "ru-RU": "Описание события 6 на русском",
-          "en-US": "Description of Event 6 in English"
-        },
-        "from": "2024-01-22T12:00:00Z",
-        "to": "2024-01-23T12:00:00Z",
-        "tags": ["tag11", "tag12"],
-        "url": "https://example6.com",
-        "image": "https://images.unsplash.com/photo-1532653495815-10005f43eee9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D"
-      },
-      {
-        "title": {
-          "ru-RU": "Событие 7 на русском",
-          "en-US": "Event 7 in English"
-        },
-        "description": {
-          "ru-RU": "Описание события 7 на русском",
-          "en-US": "Description of Event 7 in English"
-        },
-        "from": "2024-01-24T12:00:00Z",
-        "to": "2024-01-25T12:00:00Z",
-        "tags": ["tag13", "tag14"],
-        "url": "https://example7.com",
-        "image": "https://images.unsplash.com/photo-1560472354-0088b5dc9d8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D"
-      },
-      {
-        "title": {
-          "ru-RU": "Событие 8 на русском",
-          "en-US": "Event 8 in English"
-        },
-        "description": {
-          "ru-RU": "Описание события 8 на русском",
-          "en-US": "Description of Event 8 in English"
-        },
-        "from": "2024-01-26T12:00:00Z",
-        "to": "2024-01-27T12:00:00Z",
-        "tags": ["tag15", "tag16"],
-        "url": "https://example8.com",
-        "image": "https://images.unsplash.com/photo-1625296276188-1d149bdaf560?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D"
-      },
-      {
-        "title": {
-          "ru-RU": "Событие 9 на русском",
-          "en-US": "Event 9 in English"
-        },
-        "description": {
-          "ru-RU": "Описание события 9 на русском",
-          "en-US": "Description of Event 9 in English"
-        },
-        "from": "2024-01-28T12:00:00Z",
-        "to": "2024-01-29T12:00:00Z",
-        "tags": ["tag17", "tag18"],
-        "url": "https://example9.com",
-        "image": "https://images.unsplash.com/photo-1625535163131-9d1fc30ea5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D"
-      },
-      {
-        "title": {
-          "ru-RU": "Событие 10 на русском",
-          "en-US": "Event 10 in English"
-        },
-        "description": {
-          "ru-RU": "Описание события 10 на русском",
-          "en-US": "Description of Event 10 in English"
-        },
-        "from": "2024-01-30T12:00:00Z",
-        "to": "2024-01-31T12:00:00Z",
-        "tags": ["tag19", "tag20"],
-        "url": "https://example10.com",
-        "image": "https://images.unsplash.com/photo-1642132652809-8c6ab1971169?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"
+        "from": "2023-09-23T12:00:00Z",
+        "to": "2023-09-23T12:00:00Z",
+        "tags": ["React.js", "Bun.sh", "Material UI"],
+        "url": "https://picasso-test-task.vercel.app/",
+        "github": "https://github.com/NicknameIsAvailable/picasso-test-task",
+        "image": "https://gv9nkbrfzsueg0x5.public.blob.vercel-storage.com/Screenshot%202024-01-13%20at%2017-56-49%20%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%BB%D1%8F%20%D0%9F%D0%B8%D0%BA%D0%B0%D1%81%D1%81%D0%BE-Xqpy9vd7xB8qUPvYa10EVZjz8wdQCA.png"
       }
     ]
   }

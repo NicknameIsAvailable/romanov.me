@@ -103,10 +103,14 @@
     "getInTouch": {
       "title": "Get in touch",
       "label1": {
+        "name": "Your name",
+        "placeholder": "Yaroslav"
+      },
+      "label2": {
         "name": "Your telegram (url)",
         "placeholder": "https://t.me/NicknameIsAvailable"
       },
-      "label2": {
+      "label3": {
         "name": "What do you want",
         "placeholder": "Best landing in web"
       },
