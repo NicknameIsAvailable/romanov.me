@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { DictHello } from '@/app/[lang]/model';
 import { GitHub, Mail, Telegram } from '@mui/icons-material';
 import Link from 'next/link';
+import Title from '@/widgets/title';
 
 const Hello = ({dict}: {dict: DictHello}) => {
     return (
@@ -22,6 +23,12 @@ const Hello = ({dict}: {dict: DictHello}) => {
                         <Button className="sm:w-60 w-96" variant='secondary'>{dict.getInTouchButton}</Button>
                     </Link>
                 </div>
+                {/* <div className="flex gap-4 justify-center">
+                    <Link href="/blog">
+                        <Button className="sm:w-full mt-5" variant='cool'>{dict.blog}</Button>
+                    </Link>
+                    <h3 className="text-xl my-auto text-accent-3">{dict.myBlog}</h3>
+                </div> */}
                 <div className="flex gap-6 mt-6">
                     <Link target='_blank' href="https://github.com/NicknameIsAvailable/">
                         <Button className="rounded-full h-12 p-2"><GitHub className="w-10 h-10/"/></Button>

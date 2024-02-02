@@ -1,13 +1,21 @@
 import { DictPortfolio } from '@/app/[lang]/model';
 import Button from '@/widgets/button/ui';
 import React from 'react';
-import projects from "@/shared/projects.json"
 import ProjectCard from '@/widgets/project-card/ui';
 import Link from 'next/link';
 import Image from 'next/image';
 import GradientBlob4 from "@/public/images/gradient-blob-4.svg";
 
-const Portfolio = ({dict, lang}: {dict: DictPortfolio, lang: "ru-RU" | "en-US"}) => {
+const Portfolio = async ({dict, lang}: {dict: DictPortfolio, lang: "ru-RU" | "en-US"}) => {
+
+    const fetchData = async () => {
+      const response = await fetch(`http://localhost:3000/api/portfolio?count=5`)
+      const data = response.json()
+      return data
+    }
+
+    const projects = await fetchData()
+
     return (
         <section className="mt-36 container p-4 mx-auto relative z-1">
             <div id="portfolio"/>

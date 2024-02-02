@@ -13,6 +13,7 @@ import { OutsideClickHandler } from '@/features/outside-click-handler';
 import { useParams } from 'next/navigation';
 import { DictLinks } from '@/app/[lang]/model';
 import { CancelOutlined, Close } from '@mui/icons-material';
+import Title from '@/widgets/title';
 
 const styles = {
     closed: "-right-[1000px]",

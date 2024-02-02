@@ -10,7 +10,9 @@
       "name": "ROMANOV",
       "job": "FRONTEND <br> DEVELOPER",
       "aboutMeButton": "WHO????",
-      "getInTouchButton": "GET IN TOUCH"
+      "getInTouchButton": "GET IN TOUCH",
+      "blog": "Supremacist nuthouse",
+      "myBlog": "This is my blog"
     },
     "aboutMe": {
       "title": "ABOUT ME",
@@ -102,6 +104,13 @@
     },
     "getInTouch": {
       "title": "Get in touch",
+      "loading": "Loading...",
+      "dataSent": "Data sent",
+      "alertTexts": [
+        "Sending data...",
+        "Data sent successfully!",
+        "Error, sending data :("
+      ],
       "label1": {
         "name": "Your name",
         "placeholder": "Yaroslav"

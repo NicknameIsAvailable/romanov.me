@@ -1,0 +1,30 @@
+.markdownContent p {
+    @apply text-base;
+}
+
+.markdownContent h6 {
+    @apply text-xl
+}
+
+.markdownContent h5 {
+    @apply text-2xl
+}
+
+
+.markdownContent h4 {
+    @apply text-3xl
+}
+
+.markdownContent h3 {
+    @apply text-4xl
+}
+
+
+.markdownContent h2 {
+    @apply text-5xl
+}
+
+
+.markdownContent h1 {
+    @apply text-6xl
+}

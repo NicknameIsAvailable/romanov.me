@@ -10,7 +10,9 @@
       "name": "РОМАНОВ",
       "job": "ФРОНТЕНД <br> РАЗРАБОТЧИК",
       "aboutMeButton": "КТО????",
-      "getInTouchButton": "СВЯЗАТЬСЯ"
+      "getInTouchButton": "СВЯЗАТЬСЯ",
+      "blog": "Супрематическая дурка",
+      "myBlog": "Это мой блог"
     },
     "aboutMe": {
       "title": "ОБО МНЕ",
@@ -102,11 +104,22 @@
     },
     "getInTouch": {
       "title": "Связаться",
+      "loading": "Загрузка...",
+      "dataSent": "Данные отправлены",
+      "alertTexts": [
+        "Отправка данных...",
+        "Данные успешно отправленны!",
+        "Ошибка при отправке данных :("
+      ],
       "label1": {
         "name": "Ваш телеграм (url)",
         "placeholder": "https://t.me/NicknameIsAvailable"
       },
       "label2": {
+        "name": "Что вы хотите",
+        "placeholder": "Лучший лендинг в вебе"
+      },
+      "label3": {
         "name": "Что вы хотите",
         "placeholder": "Лучший лендинг в вебе"
       },

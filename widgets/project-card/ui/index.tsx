@@ -3,6 +3,7 @@ import { Props } from '../model';
 import Image from 'next/image';
 import Button from '@/widgets/button/ui';
 import GitHub from '@mui/icons-material/GitHub';
+import Link from 'next/link';
 
 const ProjectCard = ({data, lang, dict}: Props) => {
     const formattedData = {
@@ -30,10 +31,14 @@ const ProjectCard = ({data, lang, dict}: Props) => {
             <div className="flex mt-6 gap-6 flex-wrap">
                 <div className="min-w-96 flex-1 max-w-[504px] w-full">
                     <div className="flex gap-6">
-                        <Button className="w-full">{dict.viewButton}</Button>
+                        <Link href={data.url} target="_blank" className="w-full">
+                            <Button className="w-full">{dict.viewButton}</Button>                    
+                        </Link>
                         {
                             data.github && data.github?.length > 0 ?
-                            <Button><GitHub className="w-8 h-8"/></Button>
+                            <Link href={data.github} target="_blank">
+                                <Button><GitHub className="w-8 h-8"/></Button>                            
+                            </Link>
                             : ""
                         }
                     </div>

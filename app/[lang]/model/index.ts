@@ -11,6 +11,8 @@ export interface DictHello {
     job: string;
     aboutMeButton: string;
     getInTouchButton: string;
+    blog: string;
+    myBlog: string;
 }
 
 export interface DictAboutMe {
@@ -45,6 +47,9 @@ export interface DictGetInTouch {
     title: string;
     sendButton: string;
     writeDirectly: string;
+    loading: string;
+    dataSent: string;
+    alertTexts: string[],
     label1: {
         name: string;
         placeholder: string;

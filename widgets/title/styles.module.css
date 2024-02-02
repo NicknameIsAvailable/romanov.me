@@ -1,0 +1,22 @@
+.shinyText {
+  line-height: 200%;
+  background-image: linear-gradient(45deg, #FF9E9F, #A7D5EA, #00B166, #A7D5EA, #FF9E9F);
+  background-size: 200% 200%;
+  backdrop-filter: blur(100px);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 30s ease-in-out infinite alternate;
+}
+
+@keyframes shine {
+  0% {
+    font-stretch: expanded;
+    background-position: 0 0;
+  }
+  
+  100% {
+    font-stretch: condensed;
+    background-position: 200% 200%;
+  }
+}

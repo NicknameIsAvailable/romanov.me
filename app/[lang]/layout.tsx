@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Literata, Playfair_Display } from 'next/font/google'
+import { JetBrains_Mono, Playfair_Display } from 'next/font/google'
 import './globals.css'
+import { botLaunch } from '../api/telegram'
 
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+const jetbrains = JetBrains_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Romanov.me',
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-      <body className={playfairDisplay.className}>{children}</body>
+      <body className={jetbrains.className}>{children}</body>
     </html>
   )
 }

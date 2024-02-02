@@ -1,16 +1,22 @@
 import React from 'react';
 import { Dict } from '../model';
 import { dictionaries } from '../dictionaries';
-import projects from "@/shared/projects.json"
 import ProjectCard from '@/widgets/project-card/ui';
-import { ArrowBack } from '@mui/icons-material';
-import { useRouter } from 'next/router';
 import GoBackButton from '@/widgets/go-back-button';
 
-const Page = ({params}: {params: {
+const Page = async ({params}: {params: {
     lang: "ru-RU" | "en-US"
 }}) => {
     const dict: Dict = dictionaries[params.lang]
+
+
+    const fetchData = async () => {
+        const response = await fetch(`http://localhost:3000/api/portfolio`)
+        const data = response.json()
+        return data
+      }
+  
+    const projects = await fetchData()
 
     return (
         <main className="min-h-screen min-w-screen dark:bg-light bg-white">
