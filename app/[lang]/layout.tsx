@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
-import { JetBrains_Mono, Playfair_Display } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
-import { botLaunch } from '../api/telegram'
 
 const jetbrains = JetBrains_Mono({ subsets: ['latin'] })
 

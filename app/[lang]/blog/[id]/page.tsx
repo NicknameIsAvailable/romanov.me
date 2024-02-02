@@ -26,7 +26,7 @@ const Page = async ({params}: {params: {id: number}}) => {
           <h1 className="text-5xl font-bold text-accent-3">{state?.title}</h1>
           <h3 className="text-accent-3">{createdAt?.getDate()?.toString()}.{createdAt?.getUTCMonth()?.toString()}.{createdAt?.getFullYear()?.toString()}</h3>
           {
-            state?.tags.map((tag: string, key: number) => <div>{tag}</div>)
+            state?.tags.map((tag: string, key: number) => <div key={key}>{tag}</div>)
           }
         </div>
         <div className="mt-10 flex gap-10">
