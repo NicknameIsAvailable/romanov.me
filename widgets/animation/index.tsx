@@ -5,7 +5,7 @@ import Appear from "@/widgets/animation/appear";
 
 interface Props {
     children?: ReactNode,
-    variant?: "text" | "card" | "state" | "get-in-touch" | "social"
+    variant?: "text" | "card" | "state" | "get-in-touch" | "social" | "appear"
     duration?: number
 }
 
