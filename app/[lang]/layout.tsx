@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
-import { AnimatePresence } from 'framer-motion'
+import {Suspense} from "react";
+import Loading from "@/app/[lang]/loading";
 
 const jetbrains = JetBrains_Mono({ subsets: ['latin'] })
 
@@ -26,9 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <body className={jetbrains.className}>
+        <Suspense fallback={<Loading/>}>
             {children}
+        </Suspense>
       </body>
     </html>
   )

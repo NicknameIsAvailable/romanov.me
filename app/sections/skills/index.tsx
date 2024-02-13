@@ -126,7 +126,7 @@ const Skills = ({dict}: Props) => {
                                 {skillDiv.skills.map((skill: Skill, key: number) =>
                                     <Animation key={key} variant="card" duration={0.7 + (0.3 * key)}>
                                         <div
-                                             className="py-6 pl-6 bg-light/30 backdrop-blur-xl relative z-0 cursor-pointer w-[45%] sm:w-64 rounded-2xl border-2 border-accent-3 flex items-center gap-2">
+                                             className="p-6 bg-light/30 backdrop-blur-xl relative z-0 cursor-pointer min-w-80 w-full sm:min-w-64 rounded-2xl border-2 border-accent-3 flex items-center gap-2">
                                             <Image src={Light} alt="Light"
                                                    className="absolute left-0 h-full w-full rounded-2xl z-[-1]"/>
                                             <Image src={skill.icon} alt={skill.name}/>

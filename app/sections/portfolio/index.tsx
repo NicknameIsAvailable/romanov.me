@@ -3,8 +3,6 @@ import Button from '@/widgets/button/ui';
 import React from 'react';
 import ProjectCard from '@/widgets/project-card/ui';
 import Link from 'next/link';
-import Image from 'next/image';
-import GradientBlob4 from "@/public/images/gradient-blob-4.svg";
 import projects from "@/shared/projects.json"
 import Animation from "@/widgets/animation";
 
@@ -23,7 +21,6 @@ const Portfolio = async ({dict, lang}: {dict: DictPortfolio, lang: "ru-RU" | "en
     return (
         <section className="mt-36 container p-4 mx-auto relative z-1">
             <div id="portfolio"/>
-            <Image src={GradientBlob4} alt="Gradient blob 4" className="absolute z-0 top-0 pointer-events-none"/>
             <Animation variant="text">
                 <h1 className="text-accent-3 text-5xl font-bold text-center">{dict.title}</h1>
             </Animation>

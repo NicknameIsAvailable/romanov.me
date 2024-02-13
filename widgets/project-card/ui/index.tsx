@@ -19,9 +19,9 @@ const ProjectCard = ({data, lang, dict, key}: Props) => {
             <div className="border-2 p-6 rounded-3xl border-accent-2 bg-light/30 backdrop-blur-md">
                 <div className="flex gap-6 flex-wrap">
                     <Image
-                        className="min-w-96 bg-light flex-1 min-h-44 rounded-3xl max-w-[504px] max-h-[288px] w-full h-full"
-                        width={384}
-                        height={176}
+                        className="max-w-full sm:min-w-96 bg-light flex-1 min-h-44 rounded-3xl sm:max-w-[504px] max-h-[288px] w-full h-full"
+                        width={0}
+                        height={0}
                         src={data.image}
                         alt={data.title[lang]}
                     />
@@ -33,15 +33,15 @@ const ProjectCard = ({data, lang, dict, key}: Props) => {
                     </div>
                 </div>
                 <div className="flex mt-6 gap-6 flex-wrap">
-                    <div className="min-w-96 flex-1 max-w-[504px] w-full">
-                        <div className="flex gap-6">
-                            <Link href={data.url} target="_blank" className="w-full">
+                    <div className="min-w-full sm:min-w-96 flex-1 max-w-[504px] w-full">
+                        <div className="flex gap-6 w-full">
+                            <Link href={data.url} target="_blank" className="flex-1">
                                 <Button className="w-full">{dict.viewButton}</Button>
                             </Link>
                             {
                                 data.github && data.github?.length > 0 ?
-                                    <Link href={data.github} target="_blank">
-                                        <Button><GitHub className="w-8 h-8"/></Button>
+                                    <Link className="flex-1" href={data.github} target="_blank">
+                                        <Button className="w-full"><GitHub className="w-8 h-8"/></Button>
                                     </Link>
                                     : ""
                             }
@@ -52,7 +52,7 @@ const ProjectCard = ({data, lang, dict, key}: Props) => {
                         {data.tags.map((tag: string, key: number) =>
                             <div
                                 className="py-2 px-6 h-12 bg-accent-1 text-center text-white rounded-full text-2xl font-bold"
-                                key={key}>{tag}</div>
+                                key={key}>{tag.length > 14 ? `${tag.slice(0, 14)}...` : tag}</div>
                         )}
                     </div>
                 </div>
