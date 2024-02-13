@@ -19,19 +19,24 @@ export async function POST(request: NextRequest) {
         })
 
 
-        const TELEGRAM_URL = process.env.TELEGRAM_URL
+        // const TELEGRAM_URL = process.env.TELEGRAM_URL
 
-        const tgRes = await fetch(`${TELEGRAM_URL}/api/order`, {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(body)
+        // const tgRes = await fetch(`${TELEGRAM_URL}/api/order`, {
+        //     method: "POST",
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(body)
+        // })
+
+        // const tgData = tgRes.json()
+
+        return NextResponse.json({
+            success: true,
+            message: "Данные отправлены",
+            res,
+            // tgData
         })
-
-        const tgData = tgRes.json()
-
-        return NextResponse.json({success: true, message: "Данные отправлены", res, tgData})
     } catch (err) {
         console.log(err)
         return NextResponse.json({success: false, message: "Error getting state", error: err})

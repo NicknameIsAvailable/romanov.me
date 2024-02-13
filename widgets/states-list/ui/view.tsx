@@ -8,8 +8,10 @@ const View = () => {
     const [isLoading, setIsLoading] = useState<boolean>(true)
     const [states, setStates] = useState<any>()
 
+    const url = process.env.NEXT_PUBLIC_URL
+
     const fetchData = async () => {
-        const response = await fetch("http://localhost:3000/api/blog")
+        const response = await fetch(`${url}/api/blog`)
         const data = await response.json()
         setStates(data.data)
         setIsLoading(false)

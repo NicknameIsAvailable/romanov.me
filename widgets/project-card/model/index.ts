@@ -19,5 +19,6 @@ export interface Props {
         image: string | StaticImport;
     };
     lang: "ru-RU" | "en-US";
-    dict: DictPortfolio
-};
+    dict: DictPortfolio;
+    key: number;
+}

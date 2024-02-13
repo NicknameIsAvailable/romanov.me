@@ -5,32 +5,40 @@ import ProjectCard from '@/widgets/project-card/ui';
 import Link from 'next/link';
 import Image from 'next/image';
 import GradientBlob4 from "@/public/images/gradient-blob-4.svg";
+import projects from "@/shared/projects.json"
+import Animation from "@/widgets/animation";
 
 const Portfolio = async ({dict, lang}: {dict: DictPortfolio, lang: "ru-RU" | "en-US"}) => {
 
-    const fetchData = async () => {
-      const response = await fetch(`http://localhost:3000/api/portfolio?count=5`)
-      const data = response.json()
-      return data
-    }
+    // const url = process.env.NEXT_PUBLIC_URL
 
-    const projects = await fetchData()
+    // const fetchData = async () => {
+    //   const response = await fetch(`${url}/api/portfolio?count=5`)
+    //   const data = response.json()
+    //   return data
+    // }
+
+    // const projects = await fetchData()
 
     return (
         <section className="mt-36 container p-4 mx-auto relative z-1">
             <div id="portfolio"/>
-            <Image src={GradientBlob4} alt="Gradient blob 4" className="absolute z-0 top-0"/>
-            <h1 className="text-accent-3 text-5xl font-bold text-center">{dict.title}</h1>
+            <Image src={GradientBlob4} alt="Gradient blob 4" className="absolute z-0 top-0 pointer-events-none"/>
+            <Animation variant="text">
+                <h1 className="text-accent-3 text-5xl font-bold text-center">{dict.title}</h1>
+            </Animation>
             <div className="flex flex-col gap-6 mt-24">
                 {projects.data.slice(0,3).map((project: any, key: number) => 
                     <ProjectCard dict={dict} key={key} data={project} lang={lang}/>
                 )}
             </div>
-            <div className="flex justify-center mt-6">
-                <Link href={`/portfolio`}>
-                    <Button className="mx-auto" variant="secondary">{dict.viewMoreButton}</Button>
-                </Link>
-            </div>
+            <Animation variant="card">
+                <div className="flex justify-center mt-6">
+                    <Link href={`/portfolio`}>
+                        <Button className="mx-auto" variant="secondary">{dict.viewMoreButton}</Button>
+                    </Link>
+                </div>
+            </Animation>
         </section>
     );
 };

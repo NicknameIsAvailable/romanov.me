@@ -10,6 +10,7 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import PendingIcon from '@mui/icons-material/Pending';
 import PriorityHighIcon from '@mui/icons-material/PriorityHigh';
+import Animation from "@/widgets/animation";
 
 interface Inputs {
     name: string;
@@ -86,7 +87,7 @@ const GetInTouch = ({dict}: {dict: DictGetInTouch}) => {
     }
 
     return (
-        <>
+        <main>
         <Alert 
             onClose={handleCloseAlert} 
             open={alertData.open} 
@@ -95,41 +96,60 @@ const GetInTouch = ({dict}: {dict: DictGetInTouch}) => {
             color={alertData.color}
         />
 
-        <main className="mt-36 pb-12 bg-light p-4 container mx-auto">
-            <div id="get-in-touch"/>
-            <h1 className="text-center text-accent-3 text-5xl font-bold">{dict.title}</h1>
-            <form onSubmit={handleSubmit(onSubmit)} className="lg:w-1/2 w-full mx-auto border-2 border-accent-2 rounded-2xl p-6 mt-24">
-                <label className="mt-6">
-                    <h3 className="text-2xl text-white font-bold">{dict.label1.name}</h3>
-                    <input {...register("name")} className="mt-4 text-white border-2 border-accent-3 bg-light/10 py-2 px-6 w-full rounded-2xl" placeholder={dict.label1.placeholder}/>
-                </label>
-                <label className="mt-6">
-                    <h3 className="text-2xl text-white font-bold">{dict.label2.name}</h3>
-                    <input {...register("telegram")} className="mt-4 text-white border-2 border-accent-3 bg-light/10 py-2 px-6 w-full rounded-2xl" placeholder={dict.label2.placeholder}/>
-                </label>
-                <label className="">
-                    <h3 className="mt-6 text-2xl text-white font-bold">{dict.label3.name}</h3>
-                    <textarea {...register("content")} rows={5} className="mt-4 text-white border-2 border-accent-3 bg-light/10 py-2 px-6 w-full rounded-2xl" placeholder={dict.label3.placeholder}/>
-                </label>
-                <Button disabled={loading || dataSent} className="w-full mx-auto mt-6">
-                    {loading ? dict.loading : dataSent ? dict.dataSent : dict.sendButton}
-                </Button>
-            </form>
+            <div className="mt-36 pb-12 p-4 container mx-auto">
+                <div id="get-in-touch"/>
+                <Animation variant="text">
+                    <h1 className="text-center text-accent-3 text-5xl font-bold">{dict.title}</h1>
+                </Animation>
+                <Animation variant="card">
+                    <form onSubmit={handleSubmit(onSubmit)}
+                          className="lg:w-1/2 w-full mx-auto border-2 border-accent-2 rounded-2xl p-6 mt-24">
+                        <label className="mt-6">
+                            <h3 className="text-2xl text-white font-bold">{dict.label1.name}</h3>
+                            <input {...register("name")}
+                                   className="mt-4 text-white border-2 border-accent-3 bg-light/10 py-2 px-6 w-full rounded-2xl"
+                                   placeholder={dict.label1.placeholder}/>
+                        </label>
+                        <label className="mt-6">
+                            <h3 className="text-2xl text-white font-bold">{dict.label2.name}</h3>
+                            <input {...register("telegram")}
+                                   className="mt-4 text-white border-2 border-accent-3 bg-light/10 py-2 px-6 w-full rounded-2xl"
+                                   placeholder={dict.label2.placeholder}/>
+                        </label>
+                        <label className="">
+                            <h3 className="mt-6 text-2xl text-white font-bold">{dict.label3.name}</h3>
+                            <textarea {...register("content")} rows={5}
+                                      className="mt-4 text-white border-2 border-accent-3 bg-light/10 py-2 px-6 w-full rounded-2xl"
+                                      placeholder={dict.label3.placeholder}/>
+                        </label>
+                        <Button disabled={loading || dataSent} className="w-full mx-auto mt-6">
+                            {loading ? dict.loading : dataSent ? dict.dataSent : dict.sendButton}
+                        </Button>
+                    </form>
+                    </Animation>
 
-            <h3 className="text-center text-accent-3 text-2xl font-bold mt-14">{dict.writeDirectly}</h3>
-            <div className="flex gap-6 mt-6 w-full justify-center">
-                <Link target='_blank' href="https://github.com/NicknameIsAvailable/">
-                    <Button className="rounded-full h-12 p-2"><GitHub className="w-10 h-10/"/></Button>
-                </Link>
-                <Link target='_blank' href="https://t.me/NicknameIsAvailable">
-                    <Button className="rounded-full h-12 p-2"><Telegram className="w-10 h-10"/></Button>
-                </Link>
-                <Link target='_blank' href="mailto:iamgenii@yandex.ru">
-                    <Button className="rounded-full h-12 p-2"><Mail className="w-10 h-10"/></Button>
-                </Link>
-            </div>
+                <Animation variant="text">
+                    <h3 className="text-center text-accent-3 text-2xl font-bold mt-14">{dict.writeDirectly}</h3>
+                </Animation>
+                    <div className="flex gap-6 mt-6 w-full justify-center">
+                        <Animation variant="card" duration={0.7}>
+                            <Link target='_blank' href="https://github.com/NicknameIsAvailable/">
+                                <Button className="rounded-full h-12 p-2"><GitHub className="w-10 h-10/"/></Button>
+                            </Link>
+                        </Animation>
+                        <Animation variant="card" duration={1}>
+                            <Link target='_blank' href="https://t.me/NicknameIsAvailable">
+                                <Button className="rounded-full h-12 p-2"><Telegram className="w-10 h-10"/></Button>
+                            </Link>
+                        </Animation>
+                        <Animation variant="card" duration={1.3}>
+                            <Link target='_blank' href="mailto:iamgenii@yandex.ru">
+                                <Button className="rounded-full h-12 p-2"><Mail className="w-10 h-10"/></Button>
+                            </Link>
+                        </Animation>
+                    </div>
+                </div>
         </main>
-        </>
     );
 };
 

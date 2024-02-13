@@ -1,9 +1,11 @@
 import React from 'react';
 import Markdown from '@/widgets/markdown/ui';
 import TableOfContents from '@/widgets/table-of-contents/ui';
+import {jopa} from "./jopa"
+const url = process.env.NEXT_PUBLIC_URL
 
 const fetchData = async (id: number) => {
-  const response = await fetch(`http://localhost:3000/api/blog?id=${id}`)
+  const response = await fetch(`${url}/api/blog?id=${id}`)
   const data = await response.json()
   return data
 }
@@ -14,11 +16,13 @@ const Page = async ({params}: {params: {id: number}}) => {
   const state = data.data
   const createdAt = new Date(state?.createdAt)
 
+  console.log(213, data)
+
   return (
     <>
       <head>
-        <title>{state.title || "Загрузка"}</title>
-        <meta name="description" content={state.description || "Загрузка"}/>
+        <title>{state?.title || "Загрузка"}</title>
+        <meta name="description" content={state?.description || "Загрузка"}/>
       </head>
       <main className="bg-light min-h-screen pt-10">
         <div className="container mx-auto">

@@ -3,20 +3,22 @@ import { Dict } from '../model';
 import { dictionaries } from '../dictionaries';
 import ProjectCard from '@/widgets/project-card/ui';
 import GoBackButton from '@/widgets/go-back-button';
+import projects from "@/shared/projects.json"
 
 const Page = async ({params}: {params: {
     lang: "ru-RU" | "en-US"
 }}) => {
     const dict: Dict = dictionaries[params.lang]
 
+    // const url = process.env.NEXT_PUBLIC_URL
 
-    const fetchData = async () => {
-        const response = await fetch(`http://localhost:3000/api/portfolio`)
-        const data = response.json()
-        return data
-      }
+    // const fetchData = async () => {
+    //     const response = await fetch(`${url}/api/portfolio`)
+    //     const data = response.json()
+    //     return data
+    //   }
   
-    const projects = await fetchData()
+    // const projects = await fetchData()
 
     return (
         <main className="min-h-screen min-w-screen dark:bg-light bg-white">
