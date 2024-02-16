@@ -30,7 +30,8 @@ const sendMail = async (data: {name: string, telegram: string, content: string})
             subject: `Данные клиента ${name}`,
             html: html,
         }
-        await transporter.sendMail(mailOptions)
+        const res = await transporter.sendMail(mailOptions)
+        return res
     } catch (e) {
         console.log("Error while sending mail: ", e)
     }
@@ -51,15 +52,16 @@ export async function POST(request: NextRequest) {
             data: body
         })
 
-        await sendMail(body)
+        const mail = await sendMail(body)
 
         return NextResponse.json({
             success: true,
             message: "Данные отправлены",
+            mail,
             res,
         })
     } catch (err) {
         console.log(err)
-        return NextResponse.json({success: false, message: "Error getting state", error: err})
+        return NextResponse.json({success: false, message: "Error getting state", error: err}, {status: 400})
     }
 }

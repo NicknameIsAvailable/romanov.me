@@ -3,6 +3,7 @@ import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import {Suspense} from "react";
 import Loading from "@/app/[lang]/loading";
+import ThemeProvider from "@/context/theme";
 
 const jetbrains = JetBrains_Mono({ subsets: ['latin'] })
 
@@ -25,11 +26,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <body className={jetbrains.className}>
         <Suspense fallback={<Loading/>}>
+          <ThemeProvider>
             {children}
+          </ThemeProvider>
         </Suspense>
       </body>
     </html>
