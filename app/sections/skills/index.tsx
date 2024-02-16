@@ -112,7 +112,7 @@ const Skills = ({dict}: Props) => {
         <section className="container p-4 mx-auto min-h-screen">
             <div id="skills"/>
             <Animation duration={0.5} variant="text">
-                <h1 className="text-accent-3 font-bold text-5xl">{dict.title}</h1>
+                <h1 className="text-primary dark:text-accent-3 font-bold text-5xl">{dict.title}</h1>
             </Animation>
             <div className="flex flex-col flex-wrap gap-6 mt-3 relative z-0">
             <Image src={GradientBlob3} alt="Gradient blob" className="absolute right-0 top-1/4 z-[-1]"/>
@@ -126,11 +126,11 @@ const Skills = ({dict}: Props) => {
                                 {skillDiv.skills.map((skill: Skill, key: number) =>
                                     <Animation key={key} variant="card" duration={0.7 + (0.3 * key)}>
                                         <div
-                                             className="p-6 bg-light/30 backdrop-blur-xl relative z-0 cursor-pointer min-w-80 w-full sm:min-w-64 rounded-2xl border-2 border-accent-3 flex items-center gap-2">
+                                             className="p-6 bg-light/30 backdrop-blur-xl relative z-0 cursor-pointer min-w-80 w-full h-32 sm:min-w-64 rounded-2xl border-2 border-primary dark:border-accent-3 flex items-center gap-2">
                                             <Image src={Light} alt="Light"
                                                    className="absolute left-0 h-full w-full rounded-2xl z-[-1]"/>
                                             <Image src={skill.icon} alt={skill.name}/>
-                                            <h3 className="w-full text-accent-3 text-center text-xl font-bold">{skill.name}</h3>
+                                            <h3 className="w-full text-primary dark:text-accent-3 text-center text-xl font-bold">{skill.name}</h3>
                                         </div>
                                     </Animation>
                                 )}

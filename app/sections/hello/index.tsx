@@ -19,7 +19,7 @@ const Hello = ({dict}: {dict: DictHello}) => {
                 <Marquee loop={0} autoFill={true} style={{overflow: "hidden"}}>
                     {shuffledSkills.slice(0, 10).map((skill: string, key: number) =>
                             <h1
-                                className="text-accent-3/10 leading-none text-opacity-10 text-[256px] font-bold font-['JetBrains Mono'] mr-10"
+                                className="text-light/10 dark:text-accent-3/10 leading-none text-opacity-10 text-[256px] font-bold font-['JetBrains Mono'] mr-10"
                                 key={key}
                             >
                                 {skill}
@@ -29,7 +29,7 @@ const Hello = ({dict}: {dict: DictHello}) => {
                     <Marquee loop={0} direction="right" autoFill={true} style={{overflow: "hidden"}}>
                         {shuffledSkills.slice(11, skills.length).map((skill: string, key: number) =>
                             <h1
-                                className="text-accent-3/10 leading-none text-opacity-10 text-[256px] font-bold font-['JetBrains Mono'] mr-10"
+                                className="text-light/10 dark:text-accent-3/10 leading-none text-opacity-10 text-[256px] font-bold font-['JetBrains Mono'] mr-10"
                                 key={key}
                             >
                                 {skill}
@@ -39,7 +39,7 @@ const Hello = ({dict}: {dict: DictHello}) => {
                     <Marquee loop={0} style={{overflow: "hidden"}}>
                         {shuffledSkills.slice(11, skills.length).map((skill: string, key: number) =>
                             <h1
-                                className="text-accent-3/10 leading-none text-opacity-10 text-[256px] font-bold font-['JetBrains Mono'] mr-10"
+                                className="text-light/10 dark:text-accent-3/10 leading-none text-opacity-10 text-[256px] font-bold font-['JetBrains Mono'] mr-10"
                                 key={key}
                             >
                                 {skill}
@@ -51,7 +51,7 @@ const Hello = ({dict}: {dict: DictHello}) => {
             <div className="relative z-[1] w-full flex flex-col justify-center items-center sm:items-start">
                 <Image src={GradientBlob} alt="Gradient blob" className="absolute -top-12 -z-[1]"/>
                 <Animation duration={0.3} variant="text">
-                    <h2 className='text-accent-3 text-3xl lg:text-5xl font-bold'>{dict.name}</h2>
+                    <h2 className='text-primary dark:text-accent-3 text-3xl lg:text-5xl font-bold'>{dict.name}</h2>
                 </Animation>
                 <Animation duration={0.7} variant="text">
                     <h1 className='text-accent-1 xl:text-9xl font-bold lg:text-7xl text-5xl'

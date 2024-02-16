@@ -16,7 +16,7 @@
     },
     "aboutMe": {
       "title": "ABOUT ME",
-      "text": "My&nbsp;name is <span class=\"text-accent-3\"> Yaroslav Romanov</span>. I&nbsp;am a <span class=\"text-accent-1\"> Frontend Developer</span> with 2&nbsp;years of&nbsp;hands-on experience crafting <span class=\"text-accent-1\"> immersive digital experiences</span>. Proficient in&nbsp;transforming ideas into pixel-perfect, user-friendly interfaces, I&nbsp;thrive on&nbsp;the dynamic interplay of design and code. A&nbsp;relentless learner in&nbsp;the ever-evolving tech landscape, I&nbsp;bring creativity and precision to&nbsp;every project, ensuring seamless user interactions and visually stunning web solutions. Let&rsquo;s <span class=\"text-accent-1\">code </span> the future together!"
+      "text": "My&nbsp;name is <span class=\"text-primary dark:text-accent-3\"> Yaroslav Romanov</span>. I&nbsp;am a <span class=\"text-accent-1\"> Frontend Developer</span> with 2&nbsp;years of&nbsp;hands-on experience crafting <span class=\"text-accent-1\"> immersive digital experiences</span>. Proficient in&nbsp;transforming ideas into pixel-perfect, user-friendly interfaces, I&nbsp;thrive on&nbsp;the dynamic interplay of design and code. A&nbsp;relentless learner in&nbsp;the ever-evolving tech landscape, I&nbsp;bring creativity and precision to&nbsp;every project, ensuring seamless user interactions and visually stunning web solutions. Let&rsquo;s <span class=\"text-accent-1\">code </span> the future together!"
     },
     "skills": {
       "title": "Skills",

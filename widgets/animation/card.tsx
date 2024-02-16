@@ -6,7 +6,7 @@ import React, {ReactNode} from 'react';
 const Card = ({children, duration}: {children: ReactNode, duration?: number}) => {
     return (
         <motion.div
-            initial={{ opacity: 0, translateY: 100 }}
+            initial={{ opacity: 0, translateY: 50 }}
             whileInView={{opacity: 1, translateY: 0}}
             viewport={{ once: true }}
             transition={{duration: duration || 1, type: "spring"}}

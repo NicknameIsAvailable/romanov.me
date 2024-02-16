@@ -33,7 +33,7 @@ const GetInTouch = ({dict}: {dict: DictGetInTouch}) => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: {  },
       } = useForm<Inputs>()
     
     const [dataSent, setDataSent] = useState<boolean>(false)
@@ -67,6 +67,7 @@ const GetInTouch = ({dict}: {dict: DictGetInTouch}) => {
                 color: "success",
                 open: true
             })
+            setDataSent(true)
 
             setTimeout(() => setAlertData({...alertData, open: false}), 700)
         } else {
@@ -99,11 +100,11 @@ const GetInTouch = ({dict}: {dict: DictGetInTouch}) => {
             <div className="mt-36 pb-12 p-4 container mx-auto">
                 <div id="get-in-touch"/>
                 <Animation variant="text">
-                    <h1 className="text-center text-accent-3 text-5xl font-bold">{dict.title}</h1>
+                    <h1 className="text-center text-primary dark:text-accent-3 text-5xl font-bold">{dict.title}</h1>
                 </Animation>
                 <Animation variant="card">
                     <form onSubmit={handleSubmit(onSubmit)}
-                          className="lg:w-1/2 w-full mx-auto border-2 border-accent-2 rounded-2xl p-6 mt-24">
+                          className="lg:w-1/2 w-full bg-light/30 mx-auto border-2 border-accent-2 rounded-2xl p-6 mt-24">
                         <label className="mt-6">
                             <h3 className="text-2xl text-white font-bold">{dict.label1.name}</h3>
                             <input {...register("name")}

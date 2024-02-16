@@ -11,9 +11,9 @@ const AboutMe = ({dict}: {dict: DictAboutMe}) => {
             <Animation variant="text">
                 <div className="sm:flex-3 w-full sm:w-3/5 relative z-0">
                     <Image src={GradientBlob2} alt="Gradient Blob" className="absolute z-[-1] -top-16"/>
-                    <h1 className="text-accent-3 font-bold text-5xl">{dict.title}</h1>
-                    <p className="text-white mt-8 text-2xl font-bold" dangerouslySetInnerHTML={{__html: dict.text}}/>
-                    <div className="h-[2px] mt-6 w-full bg-accent-3 mx-6"/>
+                    <h1 className="text-primary dark:text-accent-3 font-bold text-5xl">{dict.title}</h1>
+                    <p className="text-light dark:text-white mt-8 text-2xl font-bold" dangerouslySetInnerHTML={{__html: dict.text}}/>
+                    <div className="h-[2px] mt-6 w-full bg-primary dark:bg-accent-3 mx-6"/>
                 </div>
             </Animation>
         </section>

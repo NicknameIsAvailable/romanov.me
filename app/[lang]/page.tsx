@@ -15,7 +15,7 @@ export default function Home({params: {lang}}: {params: {lang: "ru-RU" | "en-US"
 
   return (
       <Suspense fallback={<Loading/>}>
-          <main style={{backgroundImage: `url(${bg.src})`}} className="bg-light min-h-screen min-w-screen bg-cover bg-no-repeat">
+          <main style={{backgroundImage: `url(${bg.src})`}} className="dark:bg-light min-h-screen min-w-screen bg-cover bg-no-repeat">
               <Header dict={dict.links}/>
               <Hello dict={dict.hello}/>
               <AboutMe dict={dict.aboutMe}/>

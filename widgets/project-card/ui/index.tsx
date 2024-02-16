@@ -19,7 +19,7 @@ const ProjectCard = ({data, lang, dict, key}: Props) => {
             <div className="border-2 p-6 rounded-3xl border-accent-2 bg-light/30 backdrop-blur-md">
                 <div className="flex gap-6 flex-wrap">
                     <Image
-                        className="max-w-full sm:min-w-96 bg-light flex-1 min-h-44 rounded-3xl sm:max-w-[504px] max-h-[288px] w-full h-full"
+                        className="min-w-full sm:min-w-96 bg-light flex-1 min-h-44 rounded-3xl sm:max-w-[504px] max-h-[288px] w-full h-full"
                         width={0}
                         height={0}
                         src={data.image}
