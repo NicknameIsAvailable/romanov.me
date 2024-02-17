@@ -12,6 +12,8 @@ import FastAPIIcon from "@/public/images/fastapi.svg"
 import PostgresIcon from "@/public/images/postgres.svg"
 import MongoIcon from "@/public/images/mongodb.svg"
 import MySQLIcon from "@/public/images/mysql.svg"
+import FramerMotionIcon from "@/public/images/framer.svg"
+import ScssIcon from "@/public/images/scss.svg"
 import Zustand from "@/public/images/zustand.png"
 import SupabaseIcon from "@/public/images/supabase.svg"
 import SkillCard from "@/widgets/skill-card/ui"
@@ -81,7 +83,7 @@ const Skills = ({dict}: Props) => {
                 {
                     name: dict.skillDivs[1].skills[4].name,
                     description: dict.skillDivs[1].skills[4].description,
-                    icon: ReduxIcon,
+                    icon: FramerMotionIcon,
                     url: "https://redux.js.org/"
                 },
                 {
@@ -93,7 +95,7 @@ const Skills = ({dict}: Props) => {
                 {
                     name: dict.skillDivs[1].skills[6].name,
                     description: dict.skillDivs[1].skills[6].description,
-                    icon: ReduxIcon,
+                    icon: ScssIcon,
                     url: "https://redux.js.org/"
                 },
             ]

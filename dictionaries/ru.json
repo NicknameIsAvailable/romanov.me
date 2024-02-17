@@ -56,6 +56,30 @@
             {
               "name": "Redux",
               "description": "Redux - предсказуемый контейнер состояния для приложений JavaScript, обычно используемый с React.js..."
+            },
+            {
+              "name": "Zustand",
+              "description": "Redux is a predictable state container for JavaScript applications, commonly used with React.js..."
+            },
+            {
+              "name": "Framer Motion",
+              "description": "Redux is a predictable state container for JavaScript applications, commonly used with React.js..."
+            },
+            {
+              "name": "CSS",
+              "description": "Redux is a predictable state container for JavaScript applications, commonly used with React.js..."
+            },
+            {
+              "name": "SCSS",
+              "description": "Redux is a predictable state container for JavaScript applications, commonly used with React.js..."
+            },
+            {
+              "name": "TailWind",
+              "description": "Redux is a predictable state container for JavaScript applications, commonly used with React.js..."
+            },
+            {
+              "name": "SCSS",
+              "description": "Redux is a predictable state container for JavaScript applications, commonly used with React.js..."
             }
           ]
         },
