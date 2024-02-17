@@ -1,4 +1,4 @@
-import { DictSkill, DictSkills } from "@/app/[lang]/model"
+import { DictSkills } from "@/app/[lang]/model"
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export interface Props {
@@ -14,4 +14,5 @@ export interface Skill {
     name: string;
     description: string;
     icon: string | StaticImport;
+    url: string
 }

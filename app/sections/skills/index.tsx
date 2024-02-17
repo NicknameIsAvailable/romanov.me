@@ -12,8 +12,9 @@ import FastAPIIcon from "@/public/images/fastapi.svg"
 import PostgresIcon from "@/public/images/postgres.svg"
 import MongoIcon from "@/public/images/mongodb.svg"
 import MySQLIcon from "@/public/images/mysql.svg"
+import Zustand from "@/public/images/zustand.png"
 import SupabaseIcon from "@/public/images/supabase.svg"
-import Light from "@/public/icons/light.svg"
+import SkillCard from "@/widgets/skill-card/ui"
 import Image from 'next/image';
 import GradientBlob3 from "@/public/images/gradient-blob-3.svg"
 import Animation from "@/widgets/animation";
@@ -27,22 +28,26 @@ const Skills = ({dict}: Props) => {
                 {
                     name: dict.skillDivs[0].skills[0].name,
                     description: dict.skillDivs[0].skills[0].description,
-                    icon: JSIcon
+                    icon: JSIcon,
+                    url: "https://www.javascript.com/"
                 },
                 {
                     name: dict.skillDivs[0].skills[1].name,
                     description: dict.skillDivs[0].skills[1].description,
-                    icon: TSIcon
+                    icon: TSIcon,
+                    url: "https://www.typescriptlang.org/",
                 },
                 {
                     name: dict.skillDivs[0].skills[2].name,
                     description: dict.skillDivs[0].skills[2].description,
-                    icon: PythonIcon
+                    icon: PythonIcon,
+                    url: "https://www.python.org/"
                 },
                 {
                     name: dict.skillDivs[0].skills[3].name,
                     description: dict.skillDivs[0].skills[3].description,
-                    icon: GoIcon
+                    icon: GoIcon,
+                    url: "https://go.dev/"
                 }, 
             ]
         },
@@ -52,17 +57,44 @@ const Skills = ({dict}: Props) => {
                 {
                     name: dict.skillDivs[1].skills[0].name,
                     description: dict.skillDivs[1].skills[0].description,
-                    icon: NextIcon
+                    icon: NextIcon,
+                    url: "https://nextjs.org/"
                 },
                 {
                     name: dict.skillDivs[1].skills[1].name,
                     description: dict.skillDivs[1].skills[1].description,
-                    icon: ReactIcon
+                    icon: ReactIcon,
+                    url: "https://react.dev/"
                 },
                 {
                     name: dict.skillDivs[1].skills[2].name,
                     description: dict.skillDivs[1].skills[2].description,
-                    icon: ReduxIcon
+                    icon: ReduxIcon,
+                    url: "https://redux.js.org/"
+                },
+                {
+                    name: dict.skillDivs[1].skills[3].name,
+                    description: dict.skillDivs[1].skills[3].description,
+                    icon: Zustand,
+                    url: "https://docs.pmnd.rs/zustand/getting-started/introduction"
+                },
+                {
+                    name: dict.skillDivs[1].skills[4].name,
+                    description: dict.skillDivs[1].skills[4].description,
+                    icon: ReduxIcon,
+                    url: "https://redux.js.org/"
+                },
+                {
+                    name: dict.skillDivs[1].skills[5].name,
+                    description: dict.skillDivs[1].skills[5].description,
+                    icon: ReduxIcon,
+                    url: "https://redux.js.org/"
+                },
+                {
+                    name: dict.skillDivs[1].skills[6].name,
+                    description: dict.skillDivs[1].skills[6].description,
+                    icon: ReduxIcon,
+                    url: "https://redux.js.org/"
                 },
             ]
         },
@@ -72,12 +104,14 @@ const Skills = ({dict}: Props) => {
                 {
                     name: dict.skillDivs[2].skills[0].name,
                     description: dict.skillDivs[2].skills[0].description,
-                    icon: ExpressIcon
+                    icon: ExpressIcon,
+                    url: "https://expressjs.com/"
                 },
                 {
                     name: dict.skillDivs[2].skills[1].name,
                     description: dict.skillDivs[2].skills[1].description,
-                    icon: FastAPIIcon
+                    icon: FastAPIIcon,
+                    url: "https://fastapi.tiangolo.com/"
                 },
             ]
         },
@@ -87,22 +121,26 @@ const Skills = ({dict}: Props) => {
                 {
                     name: dict.skillDivs[3].skills[0].name,
                     description: dict.skillDivs[3].skills[0].description,
-                    icon: PostgresIcon
+                    icon: PostgresIcon,
+                    url: "https://www.postgresql.org/"
                 },
                 {
                     name: dict.skillDivs[3].skills[1].name,
                     description: dict.skillDivs[3].skills[1].description,
-                    icon: MongoIcon
+                    icon: MongoIcon,
+                    url: "https://www.mongodb.com/"
                 },
                 {
                     name: dict.skillDivs[3].skills[2].name,
                     description: dict.skillDivs[3].skills[2].description,
-                    icon: MySQLIcon
+                    icon: MySQLIcon,
+                    url: "https://www.mysql.com/"
                 },
                 {
                     name: dict.skillDivs[3].skills[3].name,
                     description: dict.skillDivs[3].skills[3].description,
-                    icon: SupabaseIcon
+                    icon: SupabaseIcon,
+                    url: "https://supabase.com/"
                 }, 
             ]
         },
@@ -124,15 +162,7 @@ const Skills = ({dict}: Props) => {
                             </Animation>
                             <div className="flex gap-12 mt-6 justify-between sm:justify-start relative flex-wrap">
                                 {skillDiv.skills.map((skill: Skill, key: number) =>
-                                    <Animation key={key} variant="card" duration={0.7 + (0.3 * key)}>
-                                        <div
-                                             className="p-6 bg-light/30 backdrop-blur-xl relative z-0 cursor-pointer min-w-80 w-full h-32 sm:min-w-64 rounded-2xl border-2 border-primary dark:border-accent-3 flex items-center gap-2">
-                                            <Image src={Light} alt="Light"
-                                                   className="absolute left-0 h-full w-full rounded-2xl z-[-1]"/>
-                                            <Image src={skill.icon} alt={skill.name}/>
-                                            <h3 className="w-full text-primary dark:text-accent-3 text-center text-xl font-bold">{skill.name}</h3>
-                                        </div>
-                                    </Animation>
+                                    <SkillCard skill={skill} key={key}/>
                                 )}
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TelegramIcon from '@mui/icons-material/Telegram';
@@ -13,7 +13,6 @@ import { OutsideClickHandler } from '@/features/outside-click-handler';
 import { useParams } from 'next/navigation';
 import { DictLinks } from '@/app/[lang]/model';
 import { CancelOutlined } from '@mui/icons-material';
-import {useTheme} from "@/context/theme";
 
 const styles = {
     closed: "-right-[1000px]",
@@ -43,11 +42,8 @@ const links: Links[] = [
     },
 ]
 
-type Theme = 'light' | 'dark';
-
 const BurgerMenu = ({dict}: {dict: DictLinks}) => {
     const params = useParams()
-    const { darkTheme, toggleTheme } = useTheme()
 
     const urls = [
         {
@@ -104,7 +100,7 @@ const BurgerMenu = ({dict}: {dict: DictLinks}) => {
         {
             name: "Theme",
             icon: <BedtimeIcon className={styles.icon}/>,
-            function: toggleTheme()
+            function: () => {}
         },
         {
             name: "Language",
