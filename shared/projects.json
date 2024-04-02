@@ -2,6 +2,18 @@
     "data": [
       {
         "title": {
+          "ru-RU": "Web3 Start",
+          "en-US": "Web3 Start"
+        },
+        "description": {"en-US":"My first application created using Web 3.0 technologies. The following functions are implemented here: connecting a cryptocurrency wallet, transferring funds from your wallet to any other wallet, displaying information about your wallet and the network you are connected to.","ru-RU":"Мое первое приложение, созданное с помощью технологий Web 3.0. Здесь реализованы следующие функции: подключение криптокошелька, перевод средств с вашего кошелька на любой другой, вывод информации о вашем кошельке и сети, к которой вы подключены. "},
+        "from": "2024-03-24T00:00:00.000Z",
+        "to": "2024-03-30T00:00:00.000Z",
+        "tags": ["Web 3.0", "Next.js", "React.js", "Wagmi", "Tailwind"],
+        "url": "https://web3-start-lyart.vercel.app/",
+        "image": "https://gv9nkbrfzsueg0x5.public.blob.vercel-storage.com/Screenshot%202024-04-02%20at%2016-08-27%20WEB3%20Start-D3laol4KKIEVdDdmSzGf98RxqXACTO.png"
+      },
+      {
+        "title": {
           "ru-RU": "Allworks",
           "en-US": "Allworks"
         },
